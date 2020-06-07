@@ -1,0 +1,13 @@
+import matplotlib.pyplot as plt
+
+volumen = [701395181,130104839,238852732,122728658,954]
+volumen_labels= ['Gas natural gaseoso', 'Aceites crudos de petroleo','Urea (Calidad fertilizante)','Bananas frescas','Formas de oro bruto']
+
+colores=['#B0C2F2','#B0F2C2','#E9B0F2','#FFB6AE','#FFE1AE']
+
+plt.axis('equal')
+plt.pie(volumen,labels= volumen_labels, autopct='%.4f%%', shadow=True, explode=[0,0,0,0.25,0], startangle=180, colors=colores, pctdistance=.75)
+
+plt.title('Cochabamba 2018: Principales 5 productos exportados al mundo')
+
+plt.show()  
